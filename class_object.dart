@@ -23,43 +23,43 @@ class User {
   }
 }
 
-// // Product Item
-// class Product {
-//   String name;
-//   double price;
-//   int? stock;
+// Product Item
+class Product {
+  String name;
+  double price;
+  int? stock;
 
-//   Product({
-//     required this.name,
-//     required this.price,
-//     this.stock,
-//   });
+  Product({
+    required this.name,
+    required this.price,
+    this.stock,
+  });
 
-//   void showProduct() {
-//     print('Product: $name');
-//     print('Price: $price');
-//     print('Stock: ${stock ?? 0}');
-//   }
-// }
+  void showProduct() {
+    print('Product: $name');
+    print('Price: $price');
+    print('Stock: ${stock ?? 0}');
+  }
+}
 
-// // Phone Item
-// class Phone {
-//   String brand;
-//   String? model;
-//   double price;
+// Phone Item
+class Phone {
+  String brand;
+  String? model;
+  double price;
 
-//   Phone({
-//     required this.brand,
-//     this.model,
-//     required this.price,
-//   });
+  Phone({
+    required this.brand,
+    this.model,
+    required this.price,
+  });
 
-//   void showPhone() {
-//     print('Brand: $brand');
-//     print('Model: ${model ?? 'Unknown'}');
-//     print('Price: $price');
-//   }
-// }
+  void showPhone() {
+    print('Brand: $brand');
+    print('Model: ${model ?? 'Unknown'}');
+    print('Price: $price');
+  }
+}
 
 void main() {
   User user = User(
@@ -69,24 +69,24 @@ void main() {
     age: 22,
   );
 
-  // Product product = Product(
-  //   name: 'Wireless Mouse',
-  //   price: 850,
-  //   stock: null,
-  // );
+  Product product = Product(
+    name: 'Wireless Mouse',
+    price: 850,
+    stock: null,
+  );
 
-  // Phone phone = Phone(
-  //   brand: 'Samsung',
-  //   model: null,
-  //   price: 150000,
-  // );
+  Phone phone = Phone(
+    brand: 'Samsung',
+    model: null,
+    price: 150000,
+  );
 
   user.showProfile();
   print('');
 
 
-  // product.showProduct();
-  // print('');
+  product.showProduct();
+  print('');
 
-  // phone.showPhone();
+  phone.showPhone();
 }
